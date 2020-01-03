@@ -23,6 +23,7 @@ import (
 )
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +genclient:onlyVerbs=create
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -42,6 +43,7 @@ type SubjectAccessReview struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +genclient:onlyVerbs=create
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -64,6 +66,7 @@ type SelfSubjectAccessReview struct {
 
 // +genclient
 // +genclient:onlyVerbs=create
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // LocalSubjectAccessReview checks whether or not a user or group can perform an action in a given namespace.
@@ -188,6 +191,7 @@ type SubjectAccessReviewStatus struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +genclient:onlyVerbs=create
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object

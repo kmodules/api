@@ -23,6 +23,7 @@ import (
 )
 
 // +genclient
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.14
 // +k8s:prerelease-lifecycle-gen:deprecated=1.19
@@ -278,6 +279,7 @@ type IngressBackend struct {
 // +k8s:prerelease-lifecycle-gen:introduced=1.18
 // +k8s:prerelease-lifecycle-gen:deprecated=1.19
 // +k8s:prerelease-lifecycle-gen:replacement=networking.k8s.io,v1,IngressClassList
+// +kubebuilder:storageversion
 
 // IngressClass represents the class of the Ingress, referenced by the Ingress
 // Spec. The `ingressclass.kubernetes.io/is-default-class` annotation can be

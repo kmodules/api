@@ -24,6 +24,7 @@ import (
 const JobCompletionIndexAnnotationAlpha = "batch.kubernetes.io/job-completion-index"
 
 // +genclient
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // Job represents the configuration of a single job.

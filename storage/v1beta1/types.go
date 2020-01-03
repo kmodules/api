@@ -589,6 +589,7 @@ type CSINodeList struct {
 // +genclient
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.21
+// +kubebuilder:storageversion
 
 // CSIStorageCapacity stores the result of one CSI GetCapacity call.
 // For a given StorageClass, this describes the available capacity in a

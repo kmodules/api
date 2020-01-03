@@ -22,6 +22,7 @@ import (
 )
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
@@ -104,6 +105,7 @@ const (
 )
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
@@ -219,6 +221,7 @@ type VolumeError struct {
 
 // +genclient
 // +genclient:nonNamespaced
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // CSIDriver captures information about a Container Storage Interface (CSI)
@@ -470,6 +473,7 @@ const (
 
 // +genclient
 // +genclient:nonNamespaced
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // CSINode holds information about all CSI drivers installed on a node.

@@ -25,6 +25,7 @@ import (
 )
 
 // +genclient
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.12
 // +k8s:prerelease-lifecycle-gen:deprecated=1.22

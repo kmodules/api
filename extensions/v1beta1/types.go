@@ -71,6 +71,7 @@ type Scale struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:method=GetScale,verb=get,subresource=scale,result=Scale
 // +genclient:method=UpdateScale,verb=update,subresource=scale,input=Scale,result=Scale
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -510,6 +511,7 @@ type DaemonSetCondition struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.1
 // +k8s:prerelease-lifecycle-gen:deprecated=1.8
@@ -572,6 +574,7 @@ type DaemonSetList struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.1
 // +k8s:prerelease-lifecycle-gen:deprecated=1.14
@@ -825,6 +828,7 @@ type IngressBackend struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:method=GetScale,verb=get,subresource=scale,result=Scale
 // +genclient:method=UpdateScale,verb=update,subresource=scale,input=Scale,result=Scale
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -964,6 +968,7 @@ type ReplicaSetCondition struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.2
@@ -1347,6 +1352,7 @@ type PodSecurityPolicyList struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.3
 // +k8s:prerelease-lifecycle-gen:deprecated=1.9

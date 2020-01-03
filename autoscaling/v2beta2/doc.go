@@ -18,5 +18,6 @@ limitations under the License.
 // +k8s:protobuf-gen=package
 // +k8s:openapi-gen=true
 // +k8s:prerelease-lifecycle-gen=true
+// +groupName=autoscaling
 
 package v2beta2 // import "k8s.io/api/autoscaling/v2beta2"

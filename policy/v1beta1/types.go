@@ -120,6 +120,7 @@ const (
 )
 
 // +genclient
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.5
 // +k8s:prerelease-lifecycle-gen:deprecated=1.21
@@ -155,6 +156,7 @@ type PodDisruptionBudgetList struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:noVerbs
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.5
@@ -176,6 +178,7 @@ type Eviction struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 // +k8s:prerelease-lifecycle-gen:introduced=1.10

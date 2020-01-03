@@ -59,6 +59,7 @@ type JobTemplateSpec struct {
 // +k8s:prerelease-lifecycle-gen:deprecated=1.21
 // +k8s:prerelease-lifecycle-gen:removed=1.25
 // +k8s:prerelease-lifecycle-gen:replacement=batch,v1,CronJob
+// +kubebuilder:storageversion
 
 // CronJob represents the configuration of a single cron job.
 type CronJob struct {
