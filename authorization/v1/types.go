@@ -23,6 +23,7 @@ import (
 )
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +genclient:noVerbs
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -42,6 +43,7 @@ type SubjectAccessReview struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +genclient:noVerbs
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
@@ -63,6 +65,7 @@ type SelfSubjectAccessReview struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:noVerbs
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
@@ -188,6 +191,7 @@ type SubjectAccessReviewStatus struct {
 }
 
 // +genclient
+// +kubebuilder:storageversion
 // +genclient:nonNamespaced
 // +genclient:noVerbs
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
