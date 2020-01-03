@@ -21,6 +21,7 @@ import (
 )
 
 // +genclient
+// +kubebuilder:storageversion
 // +k8s:deepcopy-gen:interfaces=k8s.io/apimachinery/pkg/runtime.Object
 
 // Lease defines a lease concept.
